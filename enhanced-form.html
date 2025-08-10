@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Enhanced HTML5 Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Registration Portal</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Instructions</h2>
+                <ol>
+                    <li> Fill in all required fields.</li>
+                    <li>Use valid email and phone formats.</li>
+                    <li>Submit once all information is verified.</li>
+                    <li>
+                        Important Notes:
+                        <ul>
+                            <li> Passwords must be atleast 6 characters long</li>
+                            <li>Acceptedcountries:
+                                <ol>
+                                    <li>Kenya</li>
+                                    <li>South Africa</li>
+                                    <li>Nigeria</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Form Terminology</h2>
+                <dl>
+                    <dt>Required Field</dt>
+                    <dd>A field that must be completed before submitting the form.</dd>
+
+                    <dt>Placeholder</dt>
+                    <dd>Sample text inside a field showing what to enter.</dd>
+
+                    <dt>Read only</dt>
+                    <dd>A field that is visible but cannot be edited by the user.</dd>
+                </dl>
+            </section>
+
+            <section>
+                <h2>Registratiom Form</h2>
+                <form action="" method=""> 
+                <label for="name"> Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name...">
+                <br/></br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email here...">
+                <!--username@domain.com/sa/ke/ng -->
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter your password here...">
+                <!--required minlength="8"-->
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" placeholder="Enter your dob here...">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="+1 234 567 8901" pattern="^\+?[0-9\s\-]{7,15}$">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="">--select--</option>
+                    <option value="ke">Kenya</option>
+                    <option value="sa">South Africa</option>
+                    <option value="ng">Nigeria</option>
+                </select>
+                
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label><input type="radio" name="gender" value="male">Male</label>
+                    <label><input type="radio" name="gender" value="female">Female</label>
+                    <label><input type="radio" name="gender" value="female">Other</label>
+                </fieldset>
+
+                <label for="userid">User ID (readonly)</label>
+                <input type="text" id="userid" name="userid" value="USE123456" readonly>
+
+                 <button type="submit">Submit</button>
+                 </form>
+            </section>
+
+            <section>
+                <h2>Registered Users Table</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>User ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>USR123456</td>
+                            <td>Jane Karimi</td>
+                            <td>janekarimi@gmail.com</td>
+                            <td>Kenya</td>
+                        </tr>
+                        <tr>
+                            <td>USR123456</td>
+                            <td>John Omondi</td>
+                            <td>johnomondi@yahoo.com</td>
+                            <td>Nigeria</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Welcoming Video & Audio</h2>
+                <video width="500" heigt="300" controls="">
+                <source src="https://www.pexels.com/video/a-beauty-blogger-recording-content-8371253/" type="video/mp4">
+                Your browser does not support videos.
+            </video>
+
+            <audio>
+                <source src="" type="audio/mpeg">
+                Your browser does not support audio playback.
+            </audio>
+
+            <h2>Image</h2>
+            <img src="https://www.pexels.com/photo/white-photo-paper-near-2-pineapple-fruit-191428/" alt="" width="300" height="200">
+            </section>
+
+        </main>
+
+        <footer>
+            <p>2025 Registration Portal.All rights reserved.</p>
+        </footer>
+        
+    </body>
+</html>
